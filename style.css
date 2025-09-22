@@ -1,0 +1,79 @@
+:root {
+  --orange-yellow-gradient: linear-gradient(to right, #FFA500, #FFFF00);
+  --button-text-color: #333;
+}
+
+.gradient-button {
+  background-image: var(--orange-yellow-gradient);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+  /* You can change the gradient direction or color on hover */
+  background-image: linear-gradient(to left, #FFA500, #FFFF00);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.gradient-link {
+  color: #FFA500; /* Start color for non-hovered links */
+  text-decoration: none;
+  background-image: var(--orange-yellow-gradient);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease;
+}
+
+.gradient-link:hover {
+  background-size: 100% 100%;
+  color: #333; /* Change text color on hover */
+}
+
+.gradient-navbar {
+  background-image: var(--orange-yellow-gradient);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.gradient-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.gradient-navbar a {
+  padding: 10px 15px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.gradient-navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Subtle hover effect */
+  border-radius: 5px;
+}
+
+.gradient-section {
+  background-image: var(--orange-yellow-gradient);
+  color: #333;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gradient-footer {
+  background-image: var(--orange-yellow-gradient);
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
